@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 500px;
+
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.balance {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.balance .total {
+    font-size: 36px;
+    font-weight: bold;
+    color: green;
+}
+
+.totals {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: default;
+    font-size: 16px;
+    color: white;
+}
+
+.btn-income {
+    background-color: #333;
+}
+
+.btn-expense {
+    background-color: #fff;
+    border: 2px solid #ccc;
+    color: #333;
+}
+
+.percent {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.percent .percentage {
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.transaction-section {
+    display: flex;
+    flex-direction: column; 
+}
+
+.tabs {
+    display: flex;
+    justify-content: flex-end; 
+    margin-bottom: 10px;
+}
+
+.tabs button {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #f4f4f4;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.tabs button.active {
+    background-color: #333;
+    color: white;
+}
+
+.transaction {
+    margin-top: 10px; 
+    flex: 1; 
+    margin-right: 20px;
+}
+
+.transaction h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.transaction .plus-sign {
+    color: #333;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.transaction form {
+    display: flex;
+    flex-direction: column;
+}
+
+.transaction select, .transaction input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.transaction button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.transaction button:hover {
+    background-color: #555;
+}
+
+.list {
+    width: 40%;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    border: 2px solid #ccc;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+td:nth-child(2) {
+    text-align: right;
+}
+
+.formulario {
+    display: flex; 
+    justify-content: space-between;
+}
+
+#transacciones-lista {
+    margin-top: 10px;
+}
+
+.mostrarInfo {
+    display: flex; 
+    flex-direction: column;
+}
+
+.botonMostrar {
+    display: flex;
+    gap: 10px;
+}
